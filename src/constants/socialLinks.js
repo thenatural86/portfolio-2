@@ -2,9 +2,10 @@ import React from "react"
 import {
   FaFacebookSquare,
   FaLinkedin,
-  FaBehanceSquare,
-  FaTwitterSquare,
+  FaYoutubeSquare,
   FaGithubSquare,
+  FaMedium,
+  FaInstagramSquare,
 } from "react-icons/fa"
 
 const data = [
@@ -25,13 +26,18 @@ const data = [
   },
   {
     id: 4,
-    icon: <FaBehanceSquare className="social-icon"></FaBehanceSquare>,
-    url: "https://www.twitter.com",
+    icon: <FaYoutubeSquare className="social-icon"></FaYoutubeSquare>,
+    url: "https://www.youtube.com/channel/UC16Y3fs7PjLaOdsSGhuW-5g",
   },
   {
     id: 5,
-    icon: <FaTwitterSquare className="social-icon"></FaTwitterSquare>,
-    url: "https://www.twitter.com",
+    icon: <FaMedium className="social-icon"></FaMedium>,
+    url: "https://medium.com/@philip.smalls86",
+  },
+  {
+    id: 5,
+    icon: <FaInstagramSquare className="social-icon"></FaInstagramSquare>,
+    url: "https://www.instagram.com/ninjajesse/",
   },
 ]
 const links = data.map(link => {
