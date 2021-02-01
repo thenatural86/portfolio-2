@@ -35,7 +35,7 @@ const data = [
     url: "https://medium.com/@philip.smalls86",
   },
   {
-    id: 5,
+    id: 6,
     icon: <FaInstagramSquare className="social-icon"></FaInstagramSquare>,
     url: "https://www.instagram.com/ninjajesse/",
   },
