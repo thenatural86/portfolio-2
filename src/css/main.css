@@ -429,6 +429,7 @@ Hero
 }
 .hero-img {
   display: none;
+  border-radius: 50%;
 }
 .hero-info h4 {
   color: var(--clr-grey-5);
@@ -465,6 +466,7 @@ Hero
     display: block;
     grid-row: 1/1;
     grid-column: 6/-1;
+    margin-left: 10rem;
   }
 }
 @media screen and (min-width: 1170px) {
