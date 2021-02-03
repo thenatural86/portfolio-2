@@ -12,7 +12,7 @@ const Blog = ({
   return (
     <Layout>
       <section className="blog-page">
-        <Blogs blogs={blogs} title="blog" />
+        <Blogs blogs={blogs} title="blogs" />
       </section>
     </Layout>
   )

@@ -3,8 +3,15 @@ import PropTypes from "prop-types"
 import Image from "gatsby-image"
 import { Link } from "gatsby"
 const Blog = ({ id, title, image, date, category, slug, desc }) => {
+  console.log(slug)
   return (
-    <Link to={`/blogs/${slug}`} key={id} className="blog">
+    <Link
+      target="_blank"
+      to="https://medium.com/@philip.smalls86"
+      // to={`/blogs/${slug}`}
+      key={id}
+      className="blog"
+    >
       <article>
         <Image fluid={image.childImageSharp.fluid} className="blog-img" />
         <div className="blog-card">
