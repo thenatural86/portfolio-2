@@ -1,5 +1,6 @@
 import React from "react"
 // import logo from "../assets/logo.svg"
+import { Link } from "gatsby"
 import logo2 from "../assets/logo2.png"
 import { FaAlignRight } from "react-icons/fa"
 import PageLinks from "../constants/links"
@@ -8,7 +9,9 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="nav-center">
         <div className="nav-header">
-          <img src={logo2} alt="logo" height="40px" />
+          <Link to="/">
+            <img src={logo2} alt="logo" height="40px" />
+          </Link>
           <button type="button" className="toggle-btn">
             <FaAlignRight></FaAlignRight>
           </button>
