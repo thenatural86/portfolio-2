@@ -1,5 +1,4 @@
 import React from "react"
-import PropTypes from "prop-types"
 import Image from "gatsby-image"
 import { FaGithubSquare, FaShareSquare } from "react-icons/fa"
 const Project = ({
@@ -26,10 +25,10 @@ const Project = ({
           })}
         </div>
         <div className="project-links">
-          <a target="_blank" href={github}>
+          <a target="_blank" href={github} rel="noreferrer">
             <FaGithubSquare className="project-icon" />
           </a>
-          <a target="_blank" href={url}>
+          <a target="_blank" href={url} rel="noreferrer">
             <FaShareSquare className="project-icon" />
           </a>
         </div>
@@ -37,7 +36,5 @@ const Project = ({
     </article>
   )
 }
-
-Project.propTypes = {}
 
 export default Project
