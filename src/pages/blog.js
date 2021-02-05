@@ -12,11 +12,12 @@ const Blog = ({
   console.log(blogs)
   return (
     <Layout>
-      <section className="blog-page">
+      <section className="blog-page section">
         <Blogs blogs={blogs} title="blogs" />
-        <Link to="/" className="btn center-btn" style={{ marginTop: "-2rem" }}>
+        <Link to="/" className="btn center-btn">
           Home
         </Link>
+        <div> </div>
       </section>
     </Layout>
   )
