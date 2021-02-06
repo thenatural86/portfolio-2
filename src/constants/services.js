@@ -5,7 +5,7 @@ export default [
     id: 1,
     icon: <FaCode className="service-icon" />,
     title: "web development",
-    text: `"Changing the world one line of code at a time". I utilize state-of-the-art technologies to build modular and maintainable features and products for web applications.`,
+    text: `I utilize state-of-the-art technologies to build modular and maintainable features and products for web applications.`,
   },
   {
     id: 2,
