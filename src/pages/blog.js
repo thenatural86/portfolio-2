@@ -10,7 +10,7 @@ const Blog = ({
     allStrapiBlogs: { nodes: blogs },
   },
 }) => {
-  console.log(blogs)
+  // console.log(blogs)
   return (
     <Layout>
       <SEO title="Blogs" />
@@ -29,6 +29,7 @@ export const query = graphql`
   {
     allStrapiBlogs {
       nodes {
+        url
         slug
         desc
         date(formatString: "MMM Do, YYYY")

@@ -1,17 +1,11 @@
 import React from "react"
 // import PropTypes from "prop-types"
 import Image from "gatsby-image"
-import { Link } from "gatsby"
-const Blog = ({ id, title, image, date, category, slug, desc }) => {
-  console.log(slug)
+// import { Link } from "gatsby"
+const Blog = ({ id, title, image, date, category, slug, desc, url }) => {
+  // console.log(url)
   return (
-    <Link
-      target="_blank"
-      to="https://medium.com/@philip.smalls86"
-      // to={`/blogs/${slug}`}
-      key={id}
-      className="blog"
-    >
+    <a target="_blank" href={`${url}`} key={id} className="blog">
       <article>
         <Image fluid={image.childImageSharp.fluid} className="blog-img" />
         <div className="blog-card">
@@ -23,7 +17,7 @@ const Blog = ({ id, title, image, date, category, slug, desc }) => {
           </div>
         </div>
       </article>
-    </Link>
+    </a>
   )
 }
 
