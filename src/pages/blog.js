@@ -3,6 +3,7 @@ import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 import Blogs from "../components/Blogs"
 import { Link } from "gatsby"
+import SEO from "../components/SEO"
 
 const Blog = ({
   data: {
@@ -12,6 +13,7 @@ const Blog = ({
   console.log(blogs)
   return (
     <Layout>
+      <SEO title="Blogs" />
       <section className="blog-page section">
         <Blogs blogs={blogs} title="blogs" />
         <Link to="/" className="btn center-btn">
